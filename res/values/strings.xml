@@ -6,5 +6,6 @@
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_newgroup">MainActivity</string>
     <string name="title_activity_inform">MainActivity</string>
+    <string name="title_activity_mtgroups">MainActivity</string>
 
 </resources>

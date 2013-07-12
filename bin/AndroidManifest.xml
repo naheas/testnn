@@ -30,6 +30,10 @@
             android:name="com.example.twothree.InformActivity"
             android:label="@string/title_activity_inform" >
         </activity>
+        <activity
+            android:name="com.example.twothree.MtgroupsActivity"
+            android:label="@string/title_activity_mtgroups" >
+        </activity>
     </application>
 
 </manifest>

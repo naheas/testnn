@@ -8,31 +8,31 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="엠티 그룹들"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <ImageButton
+        android:id="@+id/mainbutton2"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignLeft="@+id/mainbutton1"
+        android:layout_below="@+id/mainbutton1"
+        android:layout_marginTop="22dp"
+        android:src="@drawable/darkbluebutton" />
 
-    <ListView
-        android:id="@+id/listView1"
-        android:layout_width="match_parent"
-        android:layout_height="280dp"
-        android:layout_alignLeft="@+id/textView1"
-        android:layout_below="@+id/textView1"
-        android:layout_marginTop="21dp"
-        android:background="#60660660" >
-    </ListView>
+    <ImageButton
+        android:id="@+id/goinfo"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignRight="@+id/mainbutton1"
+        android:layout_alignTop="@+id/mainbutton2"
+        android:src="@drawable/yellowbutton" />
 
-    <Button
-        android:id="@+id/butNewGr"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_alignLeft="@+id/listView1"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="22dp"
-        android:onClick="go"
-        android:text="새 그룹 만들기" />
-
+    <ImageButton
+        android:id="@+id/mainbutton1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="73dp"
+        android:onClick="goo"
+        android:src="@drawable/redbutton" />
+    
 </RelativeLayout>
