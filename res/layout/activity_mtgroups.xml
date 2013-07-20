@@ -23,7 +23,7 @@
         android:layout_alignLeft="@+id/textView1"
         android:layout_below="@+id/textView1"
         android:layout_marginTop="21dp"
-        android:background="#60660660" >
+        android:background="#FF5050" >
     </ListView>
 
     <Button
