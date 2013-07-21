@@ -20,10 +20,6 @@ public class MtgroupsActivity extends Activity {
 	
 	private ArrayAdapter<String> _arrAdapter ;
 	
-//	private mtGroup [] listGr = new mtGroup[30];
-	
-//	private int listNum = 0;
-	
 	SQLiteDatabase database;
     
 
@@ -98,19 +94,16 @@ public class MtgroupsActivity extends Activity {
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) 
         {
-        	Intent myintent = new Intent(MtgroupsActivity.this, InformActivity.class);
+/*        	Intent myintent = new Intent(MtgroupsActivity.this, InformActivity.class);
         	myintent.putExtra("name", getData(position, 0));
     	    myintent.putExtra("man", getData(position, 1));
     	    myintent.putExtra("woman", getData(position, 2));
     	    myintent.putExtra("place", getData(position, 3));
-    	    
-        	/*
-        	myintent.putExtra("name", listGr[position].name);
-    	    myintent.putExtra("man", listGr[position].man);
-    	    myintent.putExtra("woman", listGr[position].woman);
-    	    myintent.putExtra("place", listGr[position].place);
-    	    */
     	    startActivity(myintent);
+ */
+        	Intent myintent = new Intent(MtgroupsActivity.this, TabwidgetActivity.class);
+        	startActivity(myintent);
+        	
         }        
     }
 	
@@ -137,10 +130,6 @@ public class MtgroupsActivity extends Activity {
     		String placeStr = data.getExtras().getString("place");
     		
     		insertData(nameStr, manStr, womanStr, placeStr);
-  /*  		    		
-    		listGr[listNum] = new mtGroup(nameStr, manStr, womanStr, placeStr);
-    		listNum++;
-  */  		
     		refresh(nameStr);
         }
     }
@@ -177,8 +166,8 @@ public class MtgroupsActivity extends Activity {
                	 	_arrAdapter.remove(selectedStr);
                     database.execSQL("delete from mtgrstb where name = '" + selectedStr + "'");
                     // 아래 method를 호출하지 않을 경우, 삭제된 item이 화면에 계속 보여진다.
-                    _arrAdapter.notifyDataSetChanged();                     
-//                    dialog.dismiss();  // AlertDialog를 닫는다.
+                    _arrAdapter.notifyDataSetChanged();       
+                    
                 	return;
                 }
            });
@@ -188,7 +177,6 @@ public class MtgroupsActivity extends Activity {
            {
                 @Override
                 public void onClick( DialogInterface dialog, int which ) {
-//                    dialog.dismiss();  // AlertDialog를 닫는다.
                 	return;
                 }
            });

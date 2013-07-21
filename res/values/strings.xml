@@ -7,5 +7,11 @@
     <string name="title_activity_newgroup">MainActivity</string>
     <string name="title_activity_inform">MainActivity</string>
     <string name="title_activity_mtgroups">MainActivity</string>
+    <string name="title_activity_tab">MainActivity</string>
+    <string name="title_activity_tabwidget">MainActivity</string>
+    <string name="title_activity_tab1">MainActivity</string>
+    <string name="title_activity_tab2">MainActivity</string>
+    <string name="title_activity_tab3">MainActivity</string>
+    <string name="title_activity_tab4">MainActivity</string>
 
 </resources>
