@@ -30,9 +30,11 @@ public final class R {
     }
     public static final class id {
         public static final int TextView01=0x7f080010;
-        public static final int action_settings=0x7f080015;
+        public static final int action_settings=0x7f080017;
         public static final int butFin=0x7f080014;
         public static final int butNewGr=0x7f08000c;
+        public static final int button1=0x7f080015;
+        public static final int checkBox1=0x7f080016;
         public static final int editGrName=0x7f08000d;
         public static final int editMan=0x7f08000e;
         public static final int editPlace=0x7f080013;
@@ -62,6 +64,7 @@ public final class R {
         public static final int activity_tab3=0x7f030006;
         public static final int activity_tab4=0x7f030007;
         public static final int activity_tabwidget=0x7f030008;
+        public static final int row=0x7f030009;
     }
     public static final class menu {
         public static final int inform=0x7f070000;

@@ -20,25 +20,32 @@ public class TabwidgetActivity extends TabActivity {
         TabHost.TabSpec spec;    //TabHost.TabSpec 선언
         Intent intent;      //Intent 선언
         
+        Intent myintent = getIntent();
+		int position = myintent.getExtras().getInt("position");
+        
         intent = new Intent(this, Tab1Activity.class);
+        intent.putExtra("position", position);
         spec = tabHost.newTabSpec("tab1")
              .setIndicator("인원 체크")
              .setContent(intent);
         tabHost.addTab(spec);
         
         intent = new Intent(this, Tab2Activity.class);
+        intent.putExtra("position", position);
         spec = tabHost.newTabSpec("tab2")
              .setIndicator("식량 예측")
              .setContent(intent);
         tabHost.addTab(spec);
         
         intent = new Intent(this, Tab3Activity.class);
+        intent.putExtra("position", position);
         spec = tabHost.newTabSpec("tab3")
              .setIndicator("알콜 예측")
              .setContent(intent);
         tabHost.addTab(spec);
         
         intent = new Intent(this, Tab4Activity.class);
+        intent.putExtra("position", position);
         spec = tabHost.newTabSpec("tab4")
              .setIndicator("가계부", res.getDrawable(android.R.drawable.sym_action_call))
              .setContent(intent);
